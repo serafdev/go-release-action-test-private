@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - uses: serafdev/go-release-action@v1.37-alpha.1
+    - uses: wangyoucao577/go-release-action@master
       with:
         github_token: ${{ secrets.PERSONAL_ACCESS_TOKEN_FINE_GRAINED }}
         goos: linux
@@ -19,5 +19,5 @@ jobs:
         goversion: "https://go.dev/dl/go1.20.linux-amd64.tar.gz"
         project_path: "."
         binary_name: "go-release-action-test-private"
-        release_name: "v0.0.1-alpha.1"
-        release_tag:  "v0.0.1-alpha.1"
+        release_name: "v0.0.1-alpha.2"
+        release_tag:  "v0.0.1-alpha.2"
